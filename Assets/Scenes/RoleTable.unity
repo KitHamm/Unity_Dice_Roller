@@ -5525,7 +5525,7 @@ Transform:
   m_GameObject: {fileID: 930517897}
   serializedVersion: 2
   m_LocalRotation: {x: 0.73445785, y: 0.000000029802322, z: -0, w: 0.6786543}
-  m_LocalPosition: {x: 0, y: 41.52, z: 5.44}
+  m_LocalPosition: {x: 0, y: 55.51, z: 5.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12506,12 +12506,12 @@ MonoBehaviour:
   totalText: {fileID: 819400782}
   highText: {fileID: 1504428840}
   lowText: {fileID: 1332942131}
-  D4Prefab: {fileID: 7915159253159886562, guid: bc1603b502ca9364c96902754aed577a, type: 3}
-  D6Prefab: {fileID: 788605970153494373, guid: 554b01927ae31c94196da557051ec7a5, type: 3}
-  D8Prefab: {fileID: 108846797022452756, guid: 44d8bd7a6bf8b3c40b735b080747f031, type: 3}
-  D10Prefab: {fileID: 7656821520822577400, guid: 1209bca4a5167d8429ccfc8569338910, type: 3}
-  D12Prefab: {fileID: 570447145893787617, guid: ffaddeb95f5493a4abff330fe70f8b2f, type: 3}
-  D20Prefab: {fileID: 6034408791250734769, guid: 81ea73700113ef24faaac414dff3b6a4, type: 3}
+  D4Prefab: {fileID: 1700894182068588381, guid: 505d221c166c7c242a6078b74e2f6397, type: 3}
+  D6Prefab: {fileID: 5692479199515958761, guid: 8b6201149070ec44cb9c982c1250e810, type: 3}
+  D8Prefab: {fileID: 5712432707840348781, guid: 7b44c1706d8bb9f4da288627405e2e82, type: 3}
+  D10Prefab: {fileID: 574744669004644626, guid: 08077be8220c89a4c993096801a47d9b, type: 3}
+  D12Prefab: {fileID: 5031858201198106400, guid: fb859c572c6490042a22b72c2298d068, type: 3}
+  D20Prefab: {fileID: 3655781482756766442, guid: 81ea73700113ef24faaac414dff3b6a4, type: 3}
   numberIdentifier: {fileID: 5022272344957231383, guid: 6f256a6fa95ff00459088f2851a6b892, type: 3}
   cockedDie: []
   D4count: 0
