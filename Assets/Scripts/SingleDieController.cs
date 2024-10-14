@@ -24,6 +24,7 @@ public class SingleDieController : MonoBehaviour
 
     public bool settled;
 
+    private bool logged;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -32,6 +33,7 @@ public class SingleDieController : MonoBehaviour
         startPos = transform.position;
         settled = false;
         isCocked = false;
+        logged = false;
     }
     void Update()
     {
@@ -43,7 +45,11 @@ public class SingleDieController : MonoBehaviour
         {
             if (rb.velocity == Vector3.zero)
             {
-                Debug.Log(transform.position.y);
+                if (!logged)
+                {
+                    Debug.Log(gameObject.name + ": " + transform.position.y);
+                    logged = true;
+                }
                 for (int i = 0; i < transform.childCount; i++)
                 {
                     if (transform.GetChild(i).transform.position.y > height)
@@ -71,14 +77,15 @@ public class SingleDieController : MonoBehaviour
 
     public void ThrowDie()
     {
-            isCocked = false;
-            settled = false;
-            height = -100f;
-            int rand = Random.Range(maxLeft, maxRight);
-            int randRot = 10 * (0 - rand);
-            rb.isKinematic = false;
-            rb.velocity = new Vector3(rand, downForce, forwardForce);
-            rb.AddTorque(Random.Range(-500f, 500f), Random.Range(-500f, 500f), Random.Range(-500f, 500f), ForceMode.Force);
+        logged = false;
+        isCocked = false;
+        settled = false;
+        height = -100f;
+        int rand = Random.Range(maxLeft, maxRight);
+        int randRot = 10 * (0 - rand);
+        rb.isKinematic = false;
+        rb.velocity = new Vector3(rand, downForce, forwardForce);
+        rb.AddTorque(Random.Range(-500f, 500f), Random.Range(-500f, 500f), Random.Range(-500f, 500f), ForceMode.Force);
     }
 
     public void ResetDie()

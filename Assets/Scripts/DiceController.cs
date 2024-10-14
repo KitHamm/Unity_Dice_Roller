@@ -1,4 +1,3 @@
-using Cinemachine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -167,7 +166,8 @@ public class DiceController : MonoBehaviour
                         actionButton.onClick.RemoveAllListeners();
                         actionButton.onClick.AddListener(ResetCocked);
                         actionButtonGO.SetActive(true);
-                    } else
+                    }
+                    else
                     {
                         actionButtonText.text = "REROLL";
                         actionButton.onClick.RemoveAllListeners();
@@ -363,7 +363,7 @@ public class DiceController : MonoBehaviour
         }
     }
     public void AddD10()
-    {   
+    {
         if (diceToRoll.Count < 8)
         {
             diceToRoll.Add(D10Prefab);

@@ -1206,7 +1206,7 @@ MonoBehaviour:
   maxLeft: -5
   maxRight: 5
   rolledNumber: 0
-  cockedHeight: 29.95
+  cockedHeight: 30
   isCocked: 0
   distance: 0
   hitSound: {fileID: 2435253936757384887, guid: 0b7335c1f99b3a7429f3826db78315ac, type: 3}
